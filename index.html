@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hungrill Hub - The finest GRILL and BBQ in Irinjalakuda. Enjoy authentic Kansas, Turkish, and Hariyali Al Faham, Iranian Shawarmas, Hoagies, and more. Located at C. V. Arcade, Railway Station Road.">
+    <title>Hungrill Hub | GRILL and BBQ in Irinjalakuda</title>
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">Hun</span>grill <span class="logo-sub">Hub</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#menu" class="nav-link">Our Menu</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Find Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-primary btn-sm">Order Now</a>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Sizzling & Smoky since day one</span>
+            <h1>Where Flames Meet <span class="glow-text">Flavor</span></h1>
+            <p>Experience the most authentic Al Faham Grills, Smoky BBQ, and signature Iranian Shawarmas in Irinjalakuda.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+                <a href="#contact" class="btn btn-outline btn-lg">Find Us</a>
+            </div>
+        </div>
+        <div class="scroll-down-hint">
+            <a href="#about" aria-label="Scroll down to About section">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container grid-2">
+            <div class="about-image-wrapper">
+                <img src="assets/ambience.jpg" alt="Hungrill Hub Cozy Ambience" class="about-img">
+                <div class="experience-card">
+                    <h3>#1</h3>
+                    <p>BBQ Destination in Irinjalakuda</p>
+                </div>
+            </div>
+            <div class="about-text-content">
+                <span class="section-tag">Our Story</span>
+                <h2>Crafting Sizzling Perfection on the Grill</h2>
+                <p>Welcome to <strong>Hungrill Hub</strong>, Irinjalakuda's favorite spot for flame-kissed Arabian and American fast food. Located at the heart of C. V. Arcade on Railway Station Road, we are dedicated to serving meals cooked with passion, smoke, and custom-blended spices.</p>
+                <p>From our crowd-favorite Kansas-style Al Faham to our legendary thick bread Iranian Shawarma rolls, every dish is prepared fresh using handpicked ingredients to ensure you get that authentic, juicy, fire-grilled flavor in every bite.</p>
+                
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                        <div>
+                            <h4>Authentic Al Faham</h4>
+                            <p>Juicy chicken charcoal-grilled to smokey perfection.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-mortar-pestle"></i>
+                        <div>
+                            <h4>Secret Marinades</h4>
+                            <p>Signature spice mixtures unique to Hungrill Hub.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Taste the Fire</span>
+                <h2>Explore Our Menu</h2>
+                <p>Fresh ingredients, authentic spices, and slow charcoal grilling.</p>
+            </div>
+
+            <!-- Menu Search and Filter Controls -->
+            <div class="menu-controls">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="menu-search" placeholder="Search delicious grills or shawarmas...">
+                </div>
+                <div class="filter-pills" id="filter-pills">
+                    <button class="filter-pill active" data-category="all">All Items</button>
+                    <button class="filter-pill" data-category="alfaham">Al Faham</button>
+                    <button class="filter-pill" data-category="shawarma">Shawarmas</button>
+                    <button class="filter-pill" data-category="others">Burgers & Others</button>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Special Kansas Al-Faham -->
+                <div class="menu-card" data-category="alfaham">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_platter.jpg" alt="Special Kansas Al-Faham">
+                        <span class="menu-tag hot">Must Try</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Special Kansas Al-Faham</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Smoky, intensely seasoned chicken with our signature sweet & spicy Kansas-style spice rub.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Grill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Turkish Al-Faham -->
+                <div class="menu-card" data-category="alfaham">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_platter.jpg" alt="Turkish Al-Faham">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Turkish Al-Faham</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Mildly spiced, tender chicken marinated with authentic Turkish yogurt marinade, garlic, and Mediterranean herbs.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Grill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hariyali Al-Faham -->
+                <div class="menu-card" data-category="alfaham">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_platter.jpg" alt="Hariyali Al-Faham">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Hariyali Al-Faham</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Herbaceous chicken marinated in a vibrant paste of fresh mint, coriander leaves, ginger, garlic, and green chilies.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Grill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hungrill Special Alfaham -->
+                <div class="menu-card" data-category="alfaham">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_platter.jpg" alt="Hungrill Special Alfaham">
+                        <span class="menu-tag signature">Signature</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Hungrill Special Alfaham</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Our house-special secret spice marinade. Juicy, deeply aromatic, and charcoal-grilled to golden perfection.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Grill</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arabic Roll Shawarma -->
+                <div class="menu-card" data-category="shawarma">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Arabic Roll Shawarma">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Arabic Roll Shawarma</h3>
+                            <span class="price">₹145</span>
+                        </div>
+                        <p class="menu-desc">Classic slowly-turned shredded chicken wrapped in a thin Rumali roti with crisp pickles and garlic toum sauce.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
+                            <span class="item-badge">Roll</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bun Shawarma -->
+                <div class="menu-card" data-category="shawarma">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Bun Shawarma">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Bun Shawarma</h3>
+                            <span class="price">₹190</span>
+                        </div>
+                        <p class="menu-desc">Super soft bakery buns toasted and stuffed generously with juicy shawarma chicken flakes and special salad mix.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Bun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iranian Roll Shawarma -->
+                <div class="menu-card" data-category="shawarma">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Iranian Roll Shawarma">
+                        <span class="menu-tag hot">Best Seller</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Iranian Roll Shawarma</h3>
+                            <span class="price">₹215</span>
+                        </div>
+                        <p class="menu-desc">Our signature thick bread wrap loaded with savory seasoned shawarma chicken and a rich Iranian-style garlic dressing.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Signature Roll</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plate Iranian Shawarma -->
+                <div class="menu-card" data-category="shawarma">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Plate Iranian Shawarma">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Plate Iranian Shawarma</h3>
+                            <span class="price">₹215</span>
+                        </div>
+                        <p class="menu-desc">A generous plate of juicy shredded shawarma chicken served with soft Kuboos flatbreads, fresh salad, and garlic dips.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Platter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hungrill Burgers -->
+                <div class="menu-card" data-category="others">
+                    <div class="menu-img-container">
+                        <img src="assets/ambience.jpg" alt="Hungrill Burgers">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Hungrill Special Burgers</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Soft sesame brioche buns with flame-grilled chicken patties, fresh lettuce, cheddar cheese, and house burger sauce.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
+                            <span class="item-badge">Burger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hoagies -->
+                <div class="menu-card" data-category="others">
+                    <div class="menu-img-container">
+                        <img src="assets/ambience.jpg" alt="Hoagies Sub">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Classic Hoagies Sub</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">American-style long Italian sub roll packed with grilled seasoned chicken, bell peppers, onions, and melted cheese.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Sub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fried Chicken -->
+                <div class="menu-card" data-category="others">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_platter.jpg" alt="Fried Chicken">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Crispy Fried Chicken</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Golden, ultra-crispy, southern-style double-dredged fried chicken, marinated in spiced buttermilk.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Fried</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deca Tang -->
+                <div class="menu-card" data-category="others">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Deca Tang Drink">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Signature Deca Tang</h3>
+                            <span class="price">Original</span>
+                        </div>
+                        <p class="menu-desc">Our highly refreshing specialty citrus mocktail, blended with cooling mint leaves and crushed ice.</p>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Mocktail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-results hidden" id="no-results">
+                <i class="fa-regular fa-face-frown-open"></i>
+                <p>No dishes match your search. Try looking for "Al-Faham" or "Shawarma"!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section id="reviews" class="reviews-section scroll-reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Guest Stories</span>
+                <h2>Real Reviews From Our Guests</h2>
+                <p>We take pride in every Al Faham and Shawarma we serve. Here is what our actual customers say online.</p>
+            </div>
+
+            <!-- Testimonial Slider Container -->
+            <div class="carousel-container">
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Review 1 -->
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <blockquote class="review-text">
+                                    "Best spot for Al Faham in Irinjalakuda! The Kansas Al-Faham is exceptionally smoky and a must-try. Delivery packaging is always clean and prompt."
+                                </blockquote>
+                                <div class="review-author">
+                                    <span class="author-name">Midhun K.</span>
+                                    <span class="review-source"><i class="fa-brands fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <blockquote class="review-text">
+                                    "Absolutely love their Iranian Roll Shawarma! The rich garlic flavor is unmatched. The dining space in C. V. Arcade is cozy and beautifully lit."
+                                </blockquote>
+                                <div class="review-author">
+                                    <span class="author-name">Anjali Nair</span>
+                                    <span class="review-source"><i class="fa-brands fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <blockquote class="review-text">
+                                    "The Special Turkish Alfaham is very juicy and flavorful. A great place to hang out with friends in the evening."
+                                </blockquote>
+                                <div class="review-author">
+                                    <span class="author-name">Rakesh P.</span>
+                                    <span class="review-source"><i class="fa-solid fa-star"></i> Justdial User</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <blockquote class="review-text">
+                                    "Highly recommend their Hoagies and signature Deca Tang drink. Food is always fresh, and the staff is very welcoming."
+                                </blockquote>
+                                <div class="review-author">
+                                    <span class="author-name">Jesna Antony</span>
+                                    <span class="review-source"><i class="fa-brands fa-google"></i> Google Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <button class="carousel-btn prev-btn" id="prev-btn" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn" id="next-btn" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Navigation Dots -->
+                <div class="carousel-dots" id="carousel-dots">
+                    <!-- Dots generated in JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Us & Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container grid-2">
+            <div class="contact-info-panel">
+                <span class="section-tag">Reach Us</span>
+                <h2>Visit Hungrill Hub</h2>
+                <p>We are situated conveniently on Railway Station Road, Thrissur. Drop by to experience the charcoal grilling live, or place a quick takeaway order!</p>
+                
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>C. V. Arcade, Railway Station Road, Irinjalakuda, Thrissur, Kerala - 680121</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone Call</h4>
+                            <p><a href="tel:+919645855500">+91 96458 55500</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Hours of Operation</h4>
+                            <p>Everyday: 4:00 PM – 11:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stylized Embed Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.5828456689886!2d76.2238497!3d10.375176599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7fe1a556d05f3%3A0xc005a96328325a74!2sHungrill%20Hub!5e0!3m2!1sen!2sin!4v1693000000000!5m2!1sen!2sin" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Hungrill Hub Location Map"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo"><span class="logo-accent">Hun</span>grill <span class="logo-sub">Hub</span></a>
+                <p>Sizzling authentic Arabic grills, custom Al Fahams, and delicious American-style hoagies in Irinjalakuda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="footer-socials">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hungrill Hub. All rights reserved. Designed for Grill & BBQ Lovers.</p>
+        </div>
+    </footer>
+
+    <!-- Interactivity Script -->
+    <script src="app.js"></script>
+</body>
+</html>
