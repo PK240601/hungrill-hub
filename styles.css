@@ -213,6 +213,23 @@ img {
     align-items: center;
 }
 
+.nav-logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition-smooth);
+}
+
+.nav-logo-img:hover {
+    transform: scale(1.05);
+}
+
+.footer-logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-accent {
     color: var(--primary);
     background: linear-gradient(135deg, var(--primary), #ef4444);
