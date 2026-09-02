@@ -44,9 +44,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const cardCategory = card.getAttribute('data-category');
             const cardTitle = card.querySelector('h3').textContent.toLowerCase();
             const cardDesc = card.querySelector('.menu-desc').textContent.toLowerCase();
+            const portionPills = card.querySelector('.portion-pills');
+            const portionText = portionPills ? portionPills.textContent.toLowerCase() : '';
+            const itemBadge = card.querySelector('.item-badge');
+            const badgeText = itemBadge ? itemBadge.textContent.toLowerCase() : '';
 
             const matchesCategory = (currentCategory === 'all' || cardCategory === currentCategory);
-            const matchesSearch = (cardTitle.includes(searchQuery) || cardDesc.includes(searchQuery));
+            const matchesSearch = (
+                cardTitle.includes(searchQuery) || 
+                cardDesc.includes(searchQuery) ||
+                portionText.includes(searchQuery) ||
+                badgeText.includes(searchQuery)
+            );
 
             if (matchesCategory && matchesSearch) {
                 card.classList.remove('hidden');
@@ -209,4 +218,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }, revealObserverOptions);
 
     scrollRevealElements.forEach(element => revealObserver.observe(element));
+
+    // ==========================================
+    // 5. Official Printed Menu Modal Lightbox
+    // ==========================================
+    const openMenuBtn = document.getElementById('open-menu-modal');
+    const menuModal = document.getElementById('menu-modal');
+    const closeMenuBtn = document.getElementById('close-menu-modal');
+    const modalImage = document.getElementById('menu-modal-image');
+    const downloadMenuBtn = document.getElementById('download-menu-btn');
+    const modalTabs = document.querySelectorAll('.modal-tab');
+
+    if (openMenuBtn && menuModal) {
+        openMenuBtn.addEventListener('click', () => {
+            menuModal.classList.remove('hidden');
+            menuModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeModal = () => {
+            menuModal.classList.add('hidden');
+            menuModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        };
+
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', closeModal);
+        }
+
+        // Close on clicking backdrop outside container
+        menuModal.addEventListener('click', (e) => {
+            if (e.target === menuModal) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !menuModal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+
+        // Tab click handler to change scanned menu page
+        modalTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                modalTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const imgSrc = tab.getAttribute('data-img');
+                if (modalImage && imgSrc) {
+                    modalImage.style.opacity = '0.2';
+                    setTimeout(() => {
+                        modalImage.src = imgSrc;
+                        modalImage.style.opacity = '1';
+                        if (downloadMenuBtn) {
+                            downloadMenuBtn.href = imgSrc;
+                        }
+                    }, 150);
+                }
+            });
+        });
+    }
 });
+

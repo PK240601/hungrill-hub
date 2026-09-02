@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hungrill Hub - The finest GRILL and BBQ in Irinjalakuda. Enjoy authentic Kansas, Turkish, and Hariyali Al Faham, Iranian Shawarmas, Hoagies, and more. Located at C. V. Arcade, Railway Station Road.">
+    <meta name="description" content="Hungrill Hub - The finest GRILL and BBQ in Irinjalakuda. Enjoy authentic Kansas, Turkish, and Hungrill Special Al Faham, Iranian Shawarmas, Fried Chicken Combos, Hoagies, and more. Located at C. V. Arcade, Railway Station Road.">
     <title>Hungrill Hub | GRILL and BBQ in Irinjalakuda</title>
     <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,111 +116,145 @@
             <div class="menu-controls">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input type="text" id="menu-search" placeholder="Search delicious grills or shawarmas...">
+                    <input type="text" id="menu-search" placeholder="Search delicious grills, shawarmas, combos...">
                 </div>
                 <div class="filter-pills" id="filter-pills">
                     <button class="filter-pill active" data-category="all">All Items</button>
                     <button class="filter-pill" data-category="alfaham">Al Faham</button>
                     <button class="filter-pill" data-category="shawarma">Shawarmas</button>
-                    <button class="filter-pill" data-category="others">Burgers & Others</button>
+                    <button class="filter-pill" data-category="combos">Fried Chicken &amp; Combos</button>
+                    <button class="filter-pill" data-category="burgers">Wraps &amp; Burgers</button>
+                    <button class="filter-pill" data-category="drinks">Drinks &amp; Shakes</button>
+                    <button class="filter-pill" data-category="sides">Sides &amp; Extras</button>
+                </div>
+                <div class="menu-actions-row">
+                    <button type="button" class="btn-menu-scan" id="open-menu-modal">
+                        <i class="fa-solid fa-book-open"></i> View Official Printed Menu Cards (4 Pages)
+                    </button>
                 </div>
             </div>
 
             <!-- Menu Grid -->
             <div class="menu-grid" id="menu-grid">
-                <!-- Special Kansas Al-Faham -->
+                <!-- 1. Hungrill Special Alfaham -->
                 <div class="menu-card" data-category="alfaham">
                     <div class="menu-img-container">
-                        <img src="assets/alfaham_kansas.jpg" alt="Special Kansas Al-Faham">
-                        <span class="menu-tag hot">Must Try</span>
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-title-row">
-                            <h3>Special Kansas Al-Faham</h3>
-                            <span class="price">₹499+</span>
-                        </div>
-                        <p class="menu-desc">Smoky, intensely seasoned chicken with our signature sweet & spicy Kansas-style spice rub.</p>
-                        <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
-                            <span class="item-badge">Grill</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Turkish Al-Faham -->
-                <div class="menu-card" data-category="alfaham">
-                    <div class="menu-img-container">
-                        <img src="assets/alfaham_turkish.jpg" alt="Turkish Al-Faham">
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-title-row">
-                            <h3>Turkish Al-Faham</h3>
-                            <span class="price">₹499+</span>
-                        </div>
-                        <p class="menu-desc">Mildly spiced, tender chicken marinated with authentic Turkish yogurt marinade, garlic, and Mediterranean herbs.</p>
-                        <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
-                            <span class="item-badge">Grill</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hariyali Al-Faham -->
-                <div class="menu-card" data-category="alfaham">
-                    <div class="menu-img-container">
-                        <img src="assets/alfaham_hariyali.jpg" alt="Hariyali Al-Faham">
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-title-row">
-                            <h3>Hariyali Al-Faham</h3>
-                            <span class="price">₹499+</span>
-                        </div>
-                        <p class="menu-desc">Herbaceous chicken marinated in a vibrant paste of fresh mint, coriander leaves, ginger, garlic, and green chilies.</p>
-                        <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
-                            <span class="item-badge">Grill</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hungrill Special Alfaham -->
-                <div class="menu-card" data-category="alfaham">
-                    <div class="menu-img-container">
-                        <img src="assets/alfaham_special.jpg" alt="Hungrill Special Alfaham">
+                        <img src="assets/hungrill/hungrill_special_half.jpg" alt="Hungrill Special Alfaham">
                         <span class="menu-tag signature">Signature</span>
                     </div>
                     <div class="menu-body">
                         <div class="menu-title-row">
                             <h3>Hungrill Special Alfaham</h3>
-                            <span class="price">₹549+</span>
+                            <span class="price">From ₹180</span>
                         </div>
-                        <p class="menu-desc">Our house-special secret spice marinade. Juicy, deeply aromatic, and charcoal-grilled to golden perfection.</p>
+                        <p class="menu-desc">Tender juicy chicken marinated with in-house masalas, barbecued on charcoal grill. Served with Rumali Roti, Garlic Mayo &amp; Salad.</p>
+                        <div class="portion-pills">
+                            <span>Quarter: ₹180</span>
+                            <span>Half: ₹300</span>
+                            <span>Full: ₹500</span>
+                        </div>
                         <div class="menu-footer">
                             <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
-                            <span class="item-badge">Grill</span>
+                            <span class="item-badge">Charcoal Grill</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Arabic Roll Shawarma -->
-                <div class="menu-card" data-category="shawarma">
+                <!-- 2. Turkish Tavuk Alfaham -->
+                <div class="menu-card" data-category="alfaham">
                     <div class="menu-img-container">
-                        <img src="assets/shawarma_arabic_roll.jpg" alt="Arabic Roll Shawarma">
+                        <img src="assets/hungrill/turkish_alfaham_half.jpg" alt="Turkish Tavuk Alfaham">
+                        <span class="menu-tag hot">Chef's Special</span>
                     </div>
                     <div class="menu-body">
                         <div class="menu-title-row">
-                            <h3>Arabic Roll Shawarma</h3>
-                            <span class="price">₹145</span>
+                            <h3>Turkish Tavuk Alfaham</h3>
+                            <span class="price">From ₹190</span>
                         </div>
-                        <p class="menu-desc">Classic slowly-turned shredded chicken wrapped in a thin Rumali roti with crisp pickles and garlic toum sauce.</p>
+                        <p class="menu-desc">Whole chicken marinated with ground Shishito (Nadan Chilli), charcoal grilled and served with special Turkish sauce, Rumali Roti &amp; Garlic Mayo.</p>
+                        <div class="portion-pills">
+                            <span>Quarter: ₹190</span>
+                            <span>Half: ₹320</span>
+                            <span>Full: ₹530</span>
+                        </div>
                         <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
-                            <span class="item-badge">Roll</span>
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Mild &amp; Herbal</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bun Shawarma -->
+                <!-- 3. Kansas Alfaham -->
+                <div class="menu-card" data-category="alfaham">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/kansas_alfaham_half.jpg" alt="Kansas Alfaham">
+                        <span class="menu-tag hot">Must Try</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Kansas Alfaham [Saucy-Spicy]</h3>
+                            <span class="price">From ₹190</span>
+                        </div>
+                        <p class="menu-desc">Charcoal-grilled chicken dressed in our signature sour &amp; spicy sauce. Served with Rumali Roti, Garlic Mayo &amp; fresh Salad.</p>
+                        <div class="portion-pills">
+                            <span>Quarter: ₹190</span>
+                            <span>Half: ₹330</span>
+                            <span>Full: ₹580</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Saucy-Spicy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Arabic Shawarma -->
+                <div class="menu-card" data-category="shawarma">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/arabic_wrap.jpg" alt="Arabic Shawarma">
+                        <span class="menu-tag signature">Classic</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Arabic Shawarma</h3>
+                            <span class="price">From ₹120</span>
+                        </div>
+                        <p class="menu-desc">Sliced chicken roasted on vertical rotisserie, wrapped in soft Kuboos or served as a generous platter with garlic mayo &amp; pickles.</p>
+                        <div class="portion-pills">
+                            <span>Roll: ₹120</span>
+                            <span>Plate: ₹170</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Soft Kuboos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Iranian Shawarma -->
+                <div class="menu-card" data-category="shawarma">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/iranian_wrap.jpg" alt="Iranian Shawarma">
+                        <span class="menu-tag hot">Best Seller</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Iranian Shawarma</h3>
+                            <span class="price">From ₹140</span>
+                        </div>
+                        <p class="menu-desc">Same delicious rotisserie chicken rolled into fresh Rumali Roti or served on an abundant platter with Kuboos and dips.</p>
+                        <div class="portion-pills">
+                            <span>Roll: ₹140</span>
+                            <span>Plate: ₹170</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Rumali Roti</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Bun Shawarma -->
                 <div class="menu-card" data-category="shawarma">
                     <div class="menu-img-container">
                         <img src="assets/shawarma_bun.jpg" alt="Bun Shawarma">
@@ -228,121 +262,466 @@
                     <div class="menu-body">
                         <div class="menu-title-row">
                             <h3>Bun Shawarma</h3>
-                            <span class="price">₹190</span>
+                            <span class="price">₹150</span>
                         </div>
-                        <p class="menu-desc">Super soft bakery buns toasted and stuffed generously with juicy shawarma chicken flakes and special salad mix.</p>
+                        <p class="menu-desc">Juicy rotisserie chicken flakes generously stuffed in a toasted soft bakery bun with house special garlic dressing.</p>
+                        <div class="portion-pills">
+                            <span>Toasted Bun</span>
+                            <span>Tender Rotisserie</span>
+                        </div>
                         <div class="menu-footer">
                             <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
-                            <span class="item-badge">Bun</span>
+                            <span class="item-badge">Toasted Bun</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Iranian Roll Shawarma -->
+                <!-- 7. Cheesewrap Shawarma -->
                 <div class="menu-card" data-category="shawarma">
                     <div class="menu-img-container">
-                        <img src="assets/shawarma_iranian_roll.jpg" alt="Iranian Roll Shawarma">
-                        <span class="menu-tag hot">Best Seller</span>
+                        <img src="assets/hungrill/cheesy_wrap.jpg" alt="Cheesewrap Shawarma">
+                        <span class="menu-tag hot">Cheesy</span>
                     </div>
                     <div class="menu-body">
                         <div class="menu-title-row">
-                            <h3>Iranian Roll Shawarma</h3>
-                            <span class="price">₹215</span>
+                            <h3>Cheesewrap Shawarma</h3>
+                            <span class="price">₹180</span>
                         </div>
-                        <p class="menu-desc">Our signature thick bread wrap loaded with savory seasoned shawarma chicken and a rich Iranian-style garlic dressing.</p>
-                        <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
-                            <span class="item-badge">Signature Roll</span>
+                        <p class="menu-desc">Rotisserie chicken and rich melted cheese tightly wrapped in fresh, soft Rumali Roti with signature garlic sauce.</p>
+                        <div class="portion-pills">
+                            <span>Melted Cheese</span>
+                            <span>Rumali Wrap</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Plate Iranian Shawarma -->
-                <div class="menu-card" data-category="shawarma">
-                    <div class="menu-img-container">
-                        <img src="assets/shawarma_plate_iranian.jpg" alt="Plate Iranian Shawarma">
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-title-row">
-                            <h3>Plate Iranian Shawarma</h3>
-                            <span class="price">₹215</span>
-                        </div>
-                        <p class="menu-desc">A generous plate of juicy shredded shawarma chicken served with soft Kuboos flatbreads, fresh salad, and garlic dips.</p>
                         <div class="menu-footer">
                             <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
-                            <span class="item-badge">Platter</span>
+                            <span class="item-badge">Melted Cheese</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hungrill Burgers -->
-                <div class="menu-card" data-category="others">
+                <!-- 8. Hungrill Twaine (2 Pc) -->
+                <div class="menu-card" data-category="combos">
                     <div class="menu-img-container">
-                        <img src="assets/burger_hungrill.jpg" alt="Hungrill Burgers">
+                        <img src="assets/hungrill/fried_chicken.jpg" alt="Hungrill Twaine Fried Chicken">
                     </div>
                     <div class="menu-body">
                         <div class="menu-title-row">
-                            <h3>Hungrill Special Burgers</h3>
-                            <span class="price">₹229+</span>
+                            <h3>Hungrill Twaine (2 Pc)</h3>
+                            <span class="price">₹220</span>
                         </div>
-                        <p class="menu-desc">Soft sesame brioche buns with flame-grilled chicken patties, fresh lettuce, cheddar cheese, and house burger sauce.</p>
+                        <p class="menu-desc">2 pieces of golden, ultra-crispy southern-style fried chicken served with rich Garlic Mayo and Heinz Ketchup.</p>
+                        <div class="portion-pills">
+                            <span>2 Pcs Fried Chicken</span>
+                            <span>Garlic Mayo + Ketchup</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">2 Pc Box</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Fab Four Combo (4 Pc) -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/fried_chicken.jpg" alt="Fab Four Combo">
+                        <span class="menu-tag hot">Combo</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Fab Four Combo (4 Pc)</h3>
+                            <span class="price">₹499</span>
+                        </div>
+                        <p class="menu-desc">4 Pcs Fried Chicken (Half) served with 4 soft Kuboos, 2 fresh Rumali Roti, Garlic Mayo (Small), and Ketchup.</p>
+                        <div class="portion-pills">
+                            <span>4 Pcs Fried Chicken</span>
+                            <span>4 Kuboos + 2 Rumali</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Half Combo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Big 8 Bucket Combo (8 Pc) -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/fried_chicken_10pcs.jpg" alt="Big 8 Bucket Combo">
+                        <span class="menu-tag signature">Family Feast</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Big 8 Bucket Combo (8 Pc)</h3>
+                            <span class="price">₹839</span>
+                        </div>
+                        <p class="menu-desc">8 Pcs Fried Chicken (Full) paired with 6 Kuboos or 3 Rumali Roti, large Garlic Mayo, and Heinz Ketchup.</p>
+                        <div class="portion-pills">
+                            <span>8 Pcs Fried Chicken</span>
+                            <span>6 Kuboos / 3 Rumali</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Full Feast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Deca Tang Mega Combo (10 Pc) -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/fried_chicken_10pcs.jpg" alt="Deca Tang Mega Combo">
+                        <span class="menu-tag hot">Mega Feast</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Deca Tang Mega Combo (10 Pc)</h3>
+                            <span class="price">₹999</span>
+                        </div>
+                        <p class="menu-desc">Our massive 10 Pc crispy Fried Chicken feast! Served with 8 Kuboos or 4 Rumali Roti, large Garlic Mayo, and Heinz Ketchup.</p>
+                        <div class="portion-pills">
+                            <span>10 Pcs Fried Chicken</span>
+                            <span>8 Kuboos / 4 Rumali</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Mega Combo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Chicken Nuggets -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/nuggets.jpg" alt="Chicken Nuggets">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Chicken Nuggets</h3>
+                            <span class="price">₹100</span>
+                        </div>
+                        <p class="menu-desc">Crispy bite-sized fried chicken nuggets seasoned with delicate spices and served hot with dipping sauce.</p>
+                        <div class="portion-pills">
+                            <span>Crispy Bite-Sized</span>
+                            <span>Dipping Sauce</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Snack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Veg. Nuggets -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/nuggets.jpg" alt="Veg Nuggets">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Veg. Nuggets</h3>
+                            <span class="price">₹75</span>
+                        </div>
+                        <p class="menu-desc">Crispy bite-sized golden vegetable nuggets made from fresh savory veggies, served crisp and piping hot.</p>
+                        <div class="portion-pills">
+                            <span>Crispy Veg</span>
+                            <span>Dipping Sauce</span>
+                        </div>
                         <div class="menu-footer">
                             <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
-                            <span class="item-badge">Burger</span>
+                            <span class="item-badge">Veg Snack</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hoagies -->
-                <div class="menu-card" data-category="others">
+                <!-- 14. Zinger Burrito -->
+                <div class="menu-card" data-category="burgers">
                     <div class="menu-img-container">
-                        <img src="assets/ambience.jpg" alt="Hoagies Sub">
+                        <img src="assets/hungrill/zinger_burrito.jpg" alt="Zinger Burrito">
+                        <span class="menu-tag hot">Loaded</span>
                     </div>
                     <div class="menu-body">
                         <div class="menu-title-row">
-                            <h3>Classic Hoagies Sub</h3>
-                            <span class="price">₹249+</span>
+                            <h3>Zinger Burrito</h3>
+                            <span class="price">₹180</span>
                         </div>
-                        <p class="menu-desc">American-style long Italian sub roll packed with grilled seasoned chicken, bell peppers, onions, and melted cheese.</p>
-                        <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
-                            <span class="item-badge">Sub</span>
+                        <p class="menu-desc">Boneless fried chicken breast, crispy salted french fries &amp; in-house savory sauces wrapped tightly in fresh Rumali Roti.</p>
+                        <div class="portion-pills">
+                            <span>Boneless Breast</span>
+                            <span>Fries in Wrap</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Fried Chicken -->
-                <div class="menu-card" data-category="others">
-                    <div class="menu-img-container">
-                        <img src="assets/grill_platter.jpg" alt="Fried Chicken">
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-title-row">
-                            <h3>Crispy Fried Chicken</h3>
-                            <span class="price">₹199+</span>
-                        </div>
-                        <p class="menu-desc">Golden, ultra-crispy, southern-style double-dredged fried chicken, marinated in spiced buttermilk.</p>
-                        <div class="menu-footer">
-                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
-                            <span class="item-badge">Fried</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Deca Tang -->
-                <div class="menu-card" data-category="others">
-                    <div class="menu-img-container">
-                        <img src="assets/grill_hero.jpg" alt="Deca Tang Drink">
-                    </div>
-                    <div class="menu-body">
-                        <div class="menu-title-row">
-                            <h3>Signature Deca Tang</h3>
-                            <span class="price">₹79</span>
-                        </div>
-                        <p class="menu-desc">Our highly refreshing specialty citrus mocktail, blended with cooling mint leaves and crushed ice.</p>
                         <div class="menu-footer">
                             <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
-                            <span class="item-badge">Mocktail</span>
+                            <span class="item-badge">Loaded Burrito</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. Veg Roll -->
+                <div class="menu-card" data-category="burgers">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/arabic_wrap.jpg" alt="Veg Roll">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Crispy Veg Roll</h3>
+                            <span class="price">₹120</span>
+                        </div>
+                        <p class="menu-desc">Fried veg patty with crispy french fries and fresh garden vegetables, rolled in fresh roti to go.</p>
+                        <div class="portion-pills">
+                            <span>Fried Veg Patty</span>
+                            <span>Fries &amp; Veggies</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
+                            <span class="item-badge">Veg Roll</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16. Chicken Burger -->
+                <div class="menu-card" data-category="burgers">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/burger.jpg" alt="Chicken Burger">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Hungrill Chicken Burger</h3>
+                            <span class="price">₹150</span>
+                        </div>
+                        <p class="menu-desc">Boneless tender chicken breast breaded &amp; fried, crisp fresh veggies &amp; in-house sauces layered in a toasted fresh bun.</p>
+                        <div class="portion-pills">
+                            <span>Tender Breast Patty</span>
+                            <span>Add Cheese +₹20</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Chicken Burger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17. Veg Burger -->
+                <div class="menu-card" data-category="burgers">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/burger.jpg" alt="Veg Burger">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Hungrill Veg Burger</h3>
+                            <span class="price">₹110</span>
+                        </div>
+                        <p class="menu-desc">Crispy fried vegetable patty, fresh crunchy veggies &amp; in-house creamy sauces layered into a toasted fresh bun.</p>
+                        <div class="portion-pills">
+                            <span>Crisp Veg Patty</span>
+                            <span>Add Cheese +₹20</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
+                            <span class="item-badge">Veg Burger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18. Chicken Hoagies -->
+                <div class="menu-card" data-category="burgers">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/chicken_hoagie.jpg" alt="Chicken Hoagies Sub">
+                        <span class="menu-tag signature">Popular</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Chicken Hoagies Sub</h3>
+                            <span class="price">₹200</span>
+                        </div>
+                        <p class="menu-desc">Boneless tender chicken breast breaded &amp; fried along with fresh veggies and house sauces layered in toasted fresh Samoli bread.</p>
+                        <div class="portion-pills">
+                            <span>Toasted Samoli Sub</span>
+                            <span>Add Cheese +₹20</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Hoagie Sub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 19. Veg Hoagies -->
+                <div class="menu-card" data-category="burgers">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/veg_hoagie.jpg" alt="Veg Hoagies Sub">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Veg Hoagies Sub</h3>
+                            <span class="price">₹150</span>
+                        </div>
+                        <p class="menu-desc">Fried veg patty, fresh crunchy garden veggies &amp; in-house sauces layered into toasted fresh Samoli sub bread.</p>
+                        <div class="portion-pills">
+                            <span>Toasted Samoli Sub</span>
+                            <span>Add Cheese +₹20</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.6</span>
+                            <span class="item-badge">Veg Hoagie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 20. Thick Milkshakes -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/chocolate.jpg" alt="Hungrill Thick Milkshakes">
+                        <span class="menu-tag hot">Chilled</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Thick Milkshakes</h3>
+                            <span class="price">₹80 – ₹100</span>
+                        </div>
+                        <p class="menu-desc">Rich creamy shakes: Vanilla, Strawberry, Butterscotch, Pista, Chocolate, Oreo, Cold Coffee, Cold Boost (₹80) &amp; Spanish Delight (₹100).</p>
+                        <div class="portion-pills">
+                            <span>Classic Flavors: ₹80</span>
+                            <span>Spanish Delight: ₹100</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">9 Flavors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 21. Fresh Fruit Juices -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Fresh Fruit Juices">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Fresh Fruit Juices</h3>
+                            <span class="price">From ₹30</span>
+                        </div>
+                        <p class="menu-desc">Freshly squeezed fruit juices made to order without preservatives: Pineapple (₹60), Watermelon (₹50), and Fresh Lime (₹30).</p>
+                        <div class="portion-pills">
+                            <span>Lime: ₹30</span>
+                            <span>Watermelon: ₹50</span>
+                            <span>Pineapple: ₹60</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">100% Fresh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 22. Fresh Lime Soda -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-img-container">
+                        <img src="assets/grill_hero.jpg" alt="Fresh Lime Soda">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Lime Soda (Sweet / Salt)</h3>
+                            <span class="price">₹30</span>
+                        </div>
+                        <p class="menu-desc">Refreshing bubbly chilled soda infused with freshly squeezed lime. Choice of Sweet, Salt, or Sweet &amp; Salt mixed.</p>
+                        <div class="portion-pills">
+                            <span>Sweet</span>
+                            <span>Salt</span>
+                            <span>Mixed</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="item-badge">Chilled Soda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 23. French Fries -->
+                <div class="menu-card" data-category="sides">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/fries.jpg" alt="French Fries">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>French Fries</h3>
+                            <span class="price">From ₹80</span>
+                        </div>
+                        <p class="menu-desc">Crispy golden salted potato fries served with tomato ketchup and signature garlic dipping sauce.</p>
+                        <div class="portion-pills">
+                            <span>Small: ₹80</span>
+                            <span>Large: ₹170</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Crispy Fries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 24. Fried Individual Pieces -->
+                <div class="menu-card" data-category="sides">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/fried_chicken.jpg" alt="Fried Chicken Individual Pieces">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Fried Chicken Pieces</h3>
+                            <span class="price">From ₹90</span>
+                        </div>
+                        <p class="menu-desc">Add an extra piece of crunchy golden fried chicken to your order. Freshly fried and crispy.</p>
+                        <div class="portion-pills">
+                            <span>Leg / Wings: ₹90</span>
+                            <span>Chest / Thigh: ₹110</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Add-On</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 25. Garlic Paste Dip (Toum) -->
+                <div class="menu-card" data-category="sides">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/hungrill_special_half.jpg" alt="Garlic Paste Dip">
+                        <span class="menu-tag signature">House Dip</span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Garlic Paste (Toum)</h3>
+                            <span class="price">From ₹30</span>
+                        </div>
+                        <p class="menu-desc">Hungrill Hub's famous fluffy garlic mayo dip. Creamy, garlicky, and the ultimate companion for all grills.</p>
+                        <div class="portion-pills">
+                            <span>Small: ₹30</span>
+                            <span>Large: ₹90</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="item-badge">Signature Dip</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 26. Fresh Breads (Kuboos & Rumali) -->
+                <div class="menu-card" data-category="sides">
+                    <div class="menu-img-container">
+                        <img src="assets/hungrill/rumali.jpg" alt="Rumali Roti and Kuboos">
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-title-row">
+                            <h3>Kuboos &amp; Rumali Roti</h3>
+                            <span class="price">₹12 / ₹20</span>
+                        </div>
+                        <p class="menu-desc">Soft authentic Arabian Kuboos flatbread and thin, freshly tossed warm Rumali Roti made fresh daily.</p>
+                        <div class="portion-pills">
+                            <span>Kuboos: ₹12</span>
+                            <span>Rumali Roti: ₹20</span>
+                        </div>
+                        <div class="menu-footer">
+                            <span class="rating-stars"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="item-badge">Fresh Breads</span>
                         </div>
                     </div>
                 </div>
@@ -536,6 +915,34 @@
             <p>&copy; 2026 Hungrill Hub. All rights reserved. Designed for Grill & BBQ Lovers.</p>
         </div>
     </footer>
+
+    <!-- Printed Menu Scan Modal / Lightbox -->
+    <div class="menu-modal-backdrop hidden" id="menu-modal" aria-hidden="true" role="dialog" aria-label="Official Printed Menu">
+        <div class="menu-modal-container">
+            <div class="menu-modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-subtitle">Official Dine-in &amp; Takeaway Menu</span>
+                    <h3>Hungrill Hub Menu Cards</h3>
+                </div>
+                <button class="modal-close-btn" id="close-menu-modal" aria-label="Close menu">&times;</button>
+            </div>
+            <div class="menu-modal-tabs">
+                <button class="modal-tab active" data-img="assets/menu/menuprice2.jpeg">1. Al Faham &amp; Shawarma</button>
+                <button class="modal-tab" data-img="assets/menu/menuprice3.jpeg">2. Fried Chicken &amp; Combos</button>
+                <button class="modal-tab" data-img="assets/menu/menuprice4.jpeg">3. Wraps, Burgers &amp; Subs</button>
+                <button class="modal-tab" data-img="assets/menu/menuprice1.jpeg">4. Drinks &amp; Shakes</button>
+            </div>
+            <div class="menu-modal-view">
+                <img src="assets/menu/menuprice2.jpeg" id="menu-modal-image" alt="Official Menu Card Scan">
+            </div>
+            <div class="menu-modal-footer">
+                <span><i class="fa-solid fa-circle-info"></i> Click tabs above to view all sections of the printed menu cards.</span>
+                <a href="assets/menu/menuprice2.jpeg" id="download-menu-btn" target="_blank" class="btn btn-sm btn-outline">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Image
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Interactivity Script -->
     <script src="app.js"></script>
