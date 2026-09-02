@@ -10,7 +10,7 @@ This website showcases authentic Arabian barbecue, charcoal-grilled Al-Faham opt
 
 - **Fiery Amber Visual Theme**: Premium obsidian-dark styling with warm ambient glowing accents, smooth hover triggers, and responsive layout.
 - **Authentic Interactive Menu**: 26 authentic dishes categorized across:
-  - **Al Faham** (Hungrill Special, Turkish Tavuk, Kansas [Saucy-Spicy])
+  - **Al Faham** (Hungrill Special, Turkish Tavuk, Kansas)
   - **Shawarmas** (Arabic Roll/Plate, Iranian Roll/Plate, Bun Shawarma, Cheesewrap)
   - **Fried Chicken & Combos** (Hungrill Twaine 2 Pc, Fab Four 4 Pc, Big 8 Bucket, Deca Tang 10 Pc Mega Feast, Chicken & Veg Nuggets)
   - **Wraps & Burgers** (Zinger Burrito, Veg Roll, Hungrill Chicken & Veg Burgers, Hoagies Subs)
