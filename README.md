@@ -2,6 +2,8 @@
 
 A modern, high-performance, interactive business website for **Hungrill Hub - GRILL & BBQ in Irinjalakuda**, Thrissur. 
 
+🚀 **Live Demo:** [https://hungrill-hub.onrender.com/](https://hungrill-hub.onrender.com/)
+
 This website showcases authentic Arabian barbecue, charcoal-grilled Al-Faham options, customer-favorite Iranian shawarmas, crispy fried chicken feasts, subs, burgers, and thick milkshakes using modern dark glassmorphism aesthetics and smooth interactive components.
 
 ---
@@ -39,8 +41,8 @@ To run the project locally, serve the directory using Python's built-in HTTP ser
 
 1. Clone the repository:
    ```bash
-   git clone <your-repository-url>
-   cd Hungrill
+   git clone https://github.com/PK240601/hungrill-hub.git
+   cd hungrill-hub
    ```
 
 2. Start the local server:
